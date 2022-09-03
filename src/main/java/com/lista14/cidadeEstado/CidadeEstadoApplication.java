@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CidadeEstadoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CidadeestadoApplication.class, args);
+		SpringApplication.run(CidadeEstadoApplication.class, args);
 	}
 
 }
