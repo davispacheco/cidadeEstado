@@ -1,4 +1,9 @@
 package com.lista14.cidadeEstado.repository;
 
-public interface EnderecoRepository {
+import com.lista14.cidadeEstado.model.EnderecoModel;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface EnderecoRepository extends JpaRepository<EnderecoModel, Long> {
 }
