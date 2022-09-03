@@ -1,10 +1,10 @@
-package com.lista14.cidadeestado;
+package com.lista14.cidadeEstado;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CidadeestadoApplicationTests {
+class CidadeEstadoApplicationTests {
 
 	@Test
 	void contextLoads() {
