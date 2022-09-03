@@ -1,5 +1,6 @@
 package com.lista14.cidadeEstado.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -27,6 +28,7 @@ public class EstadoModel implements Serializable {
     @Column(length = 2, nullable = false)
     private String sigla;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "estado", cascade = CascadeType.ALL)
     private List<CidadeModel> cidades = new ArrayList<>();
 }
