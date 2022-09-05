@@ -25,7 +25,7 @@ public class CidadeModel implements Serializable {
     private String nome;
 
     @ManyToOne
-    @JoinColumn(name = "estado_codigo")
+    @JoinColumn(name = "estado_codigo", referencedColumnName = "codigo")
     private EstadoModel estado;
 
     @JsonIgnore

@@ -28,6 +28,6 @@ public class EnderecoModel {
     private String bairro;
 
     @ManyToOne
-    @JoinColumn(name = "cidade_codigo")
+    @JoinColumn(name = "cidade_codigo", referencedColumnName = "codigo")
     private CidadeModel cidade;
 }
